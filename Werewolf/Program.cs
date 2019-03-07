@@ -16,15 +16,6 @@ namespace Werewolf
     {
         public static void Main(string[] args)
         {
-            Board board = GameFactory.BuildBoard("villager", "villager", "werewolf", "seer", "robber", "tanner");
-            User user = new User
-            {
-                Mail = "m@mstaal.com"
-            };
-            User user2 = new User
-            {
-                Mail = "m87877899878879786668787yggvftv f vyubytfvvvy"
-            };
             BuildWebHost(args).Run();
         }
 
