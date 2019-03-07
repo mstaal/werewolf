@@ -1,5 +1,4 @@
-﻿using System;
-using Werewolf.Logic;
+﻿using Werewolf.Logic;
 
 namespace Werewolf.Models
 {
@@ -10,14 +9,11 @@ namespace Werewolf.Models
         public string Password { get; set; }
 
         public Character Character { get; set; }
-        public string ID
-        {
-            get { return Mail.CreateMD5(); }
-        }
+        public string Id => Mail.CreateMd5();
 
         public void ApplyAbillity(string id, params Character[] characters)
         {
-            if (Character != null && id == ID)
+            if (Character != null && id == Id)
             {
                 Character.ApplyAbillity(characters);
             }

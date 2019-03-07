@@ -7,7 +7,7 @@ namespace Werewolf.Models
     public class Game
     {
         public List<User> Users { get; set; }
-        public string ID { get; private set; }
+        public string Id { get; private set; }
 
         public Game(User user)
         {
@@ -15,7 +15,7 @@ namespace Werewolf.Models
             {
                 user
             };
-            this.ID = user.ID;
+            this.Id = user.Id;
         }
 
         public void AddPlayer(User user)
@@ -35,7 +35,7 @@ namespace Werewolf.Models
         {
             if (this.Users.Contains(user))
             {
-                this.ID = user.ID;
+                this.Id = user.Id;
             }
             else
             {
