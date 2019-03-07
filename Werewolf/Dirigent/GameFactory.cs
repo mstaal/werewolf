@@ -48,7 +48,7 @@ namespace Werewolf.Dirigent
                     ActiveCharacters = active
                 };
             }
-            throw new ArgumentOutOfRangeException("Specify more than 5 types");
+            throw new ArgumentOutOfRangeException(nameof(types), "Specify more than 5 types");
         }
 
         public static List<Character> BuildCharacters(Board board)
