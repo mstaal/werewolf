@@ -13,9 +13,9 @@ namespace Werewolf.Models
 
         public void ApplyAbillity(string id, params Character[] characters)
         {
-            if (Character != null && id == Id)
+            if (id == this.Id)
             {
-                Character.ApplyAbillity(characters);
+                Character?.ApplyAbillity(characters);
             }
         }
     }
