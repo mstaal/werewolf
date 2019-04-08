@@ -1,5 +1,4 @@
-﻿// Write your JavaScript code.
-var radius = 150;
+﻿var radius = 200;
 var fields = $('.field'), container = $('#container'), width = container.width(), height = container.height();
 var angle = 11, step = (2*Math.PI) / fields.length;
 fields.each(function() {
